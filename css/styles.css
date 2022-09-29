@@ -181,7 +181,7 @@ nav {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    padding-top: 95px;
+    padding-top: 89px;
     padding-bottom: 94px;
 }
 
@@ -248,6 +248,19 @@ nav {
     justify-content: flex-start;
     height: 44px;
     gap: 10px;
+}
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut {
+    box-sizing: content-box;
+    width: 70px;
+    height: 70px;
+    padding: 25px 100px;
+    background-color: var(--background-filter);
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .icon-mail {
@@ -394,6 +407,7 @@ nav {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-title);
+    margin-bottom: 10px;
 }
 
 .subtitle:hover {

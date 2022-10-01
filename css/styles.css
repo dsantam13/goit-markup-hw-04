@@ -150,7 +150,8 @@ nav {
     fill: var(--fill-icon);
 }
 
-.client-item:hover {
+.client-item:hover,
+.client-item:focus {
     outline: 1px solid var(--color-logo);
     fill: var(--color-logo);
 }
@@ -307,6 +308,18 @@ nav {
 .icon-mail {
     margin-right: 10px;
     fill: var(--color-text);
+}
+
+.icon-network {
+    border-radius: 50%;
+    background-color: var(--text-banner);
+    fill: var(--fill-icon);
+}
+
+.icon-network:hover,
+.icon-network:focus {
+    background-color: var(--color-logo);
+    fill: var(--text-banner);
 }
 
 .icon-phone {
@@ -474,6 +487,19 @@ nav {
     display: flex;
     margin-top: 50px;
     justify-content: space-between;
+}
+
+.team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 44px;
+    margin-top: 16px;
+}
+
+.team-icons>li {
+    display: flex;
+    align-items: center;
 }
 
 .team-item {

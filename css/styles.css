@@ -6,6 +6,7 @@
     --text-banner: #FFFFFF;
     --background-filter: #F5F4FA;
     --color-back-portafolio: #E5E5E5;
+    --fill-network: #AFB1B8;
 }
 
 * {
@@ -51,6 +52,17 @@ footer>.container {
     justify-content: flex-start;
     align-items: baseline;
     gap: 70px;
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--text-banner);
 }
 
 header {
@@ -125,6 +137,11 @@ nav {
     margin-right: 24px;
 }
 
+.clients {
+    margin-top: 59px;
+    margin-bottom: 151px;
+}
+
 .contact {
     font-style: normal;
     font-weight: 500;
@@ -132,11 +149,6 @@ nav {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text);
-}
-
-.contact:hover,
-.contact:focus {
-    color: var(--color-logo);
 }
 
 .contacts {
@@ -151,6 +163,12 @@ nav {
 .contact-item {
     display: inline-flex;
     align-items: center;
+}
+
+.contact-item:hover *,
+.contact-item:focus * {
+    color: var(--color-logo);
+    fill: var(--color-logo);
 }
 
 .contacts>.contact-item:not(:last-child) {
@@ -245,9 +263,17 @@ nav {
 
 .icons {
     display: inline-flex;
+    align-items: center;
+    margin-top: 16px;
+    gap: 10px;
+}
+
+.icons2 {
+    display: inline-flex;
     justify-content: flex-start;
     height: 44px;
     gap: 10px;
+    margin-top: 20px;
 }
 
 .icon-antenna,
@@ -255,27 +281,27 @@ nav {
 .icon-diagram,
 .icon-astronaut {
     box-sizing: content-box;
-    width: 70px;
-    height: 70px;
     padding: 25px 100px;
     background-color: var(--background-filter);
     border-radius: 4px;
     margin-bottom: 30px;
 }
 
-.icon-mail {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
+.icon-instagram {
+    fill: var(--fill-network);
+}
 
+.icon-mail {
+    margin-right: 10px;
     fill: var(--color-text);
 }
 
-.icon-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
+.icon-network {
+    height: 44px;
+}
 
+.icon-phone {
+    margin-right: 10px;
     fill: var(--color-text);
 }
 
@@ -382,30 +408,45 @@ nav {
     margin-bottom: 55.05px;
 }
 
-.service>ul {
+.service-item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 370px;
+    height: 294px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--text-banner);
+}
+
+.service-item:nth-child(1) {
+    background-image: url('.././images/image.jpg');
+}
+
+.service-item:nth-child(2) {
+    background-image: url('.././images/image-1.jpg');
+}
+
+.service-item:nth-child(3) {
+    background-image: url('.././images/image-2.jpg');
+}
+
+.service-item>h3 {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.service-list {
     display: flex;
     justify-content: space-between;
 }
 
-.social-networks>h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-banner);
-
-    margin-bottom: 20px;
-}
-
 .subtitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: var(--color-title);
     margin-bottom: 10px;
 }
@@ -439,8 +480,11 @@ nav {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-
     margin-top: 30px;
+}
+
+.team-person>h3 {
+    text-transform: none;
 }
 
 .text {

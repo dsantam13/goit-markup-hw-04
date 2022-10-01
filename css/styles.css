@@ -6,7 +6,7 @@
     --text-banner: #FFFFFF;
     --background-filter: #F5F4FA;
     --color-back-portafolio: #E5E5E5;
-    --fill-network: #AFB1B8;
+    --fill-icon: #AFB1B8;
 }
 
 * {
@@ -142,6 +142,30 @@ nav {
     margin-bottom: 151px;
 }
 
+.client-item {
+    box-sizing: content-box;
+    padding: 14.09px 32px;
+    outline: 1px solid var(--fill-icon);
+    border-radius: 4px;
+    fill: var(--fill-icon);
+}
+
+.client-item:hover {
+    outline: 1px solid var(--color-logo);
+    fill: var(--color-logo);
+}
+
+.clients-logo {
+    margin-top: 44.02px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients-logo>li {
+    display: inline-flex;
+    align-items: center;
+}
+
 .contact {
     font-style: normal;
     font-weight: 500;
@@ -261,13 +285,6 @@ nav {
     margin-right: 8px;
 }
 
-.icons {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 16px;
-    gap: 10px;
-}
-
 .icons2 {
     display: inline-flex;
     justify-content: flex-start;
@@ -287,17 +304,9 @@ nav {
     margin-bottom: 30px;
 }
 
-.icon-instagram {
-    fill: var(--fill-network);
-}
-
 .icon-mail {
     margin-right: 10px;
     fill: var(--color-text);
-}
-
-.icon-network {
-    height: 44px;
 }
 
 .icon-phone {

@@ -98,11 +98,13 @@ nav {
 }
 
 .banner {
+    margin-right: auto;
+    margin-left: auto;
     background-color: var(--color-background);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-
+    max-width: 1600px;
     background-image: url('.././images/Image-back.jpg');
     background-size: cover;
     background-position: center;
@@ -286,12 +288,22 @@ nav {
     margin-right: 8px;
 }
 
-.icons2 {
+.social-icons {
     display: inline-flex;
     justify-content: flex-start;
     height: 44px;
     gap: 10px;
     margin-top: 20px;
+}
+
+.social-item>.icon-network {
+    fill: var(--text-banner);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: column;
 }
 
 .icon-antenna,
